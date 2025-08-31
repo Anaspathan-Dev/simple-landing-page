@@ -1,0 +1,190 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+         overflow: auto;         /* Scroll enable rahe */
+  scrollbar-width: none;  /* Firefox */
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color:  rgb(23, 14, 120);
+        /* padding: 20px; */
+        border-bottom:2px solid;
+        border-bottom-color: white;
+      }
+
+      .logo {
+        color:rgba(255, 255, 255, 0.934);
+        background-color: rgb(50, 36, 200);
+        padding: 5px 30px;
+        border-radius: 4px;
+        /* text-decoration: underline black; */
+        cursor: pointer;
+
+      }
+
+      .navbar ul {
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+        padding: 25px;
+        color: white;
+      }
+
+      .navbar button {
+        border: none;
+        padding: 6px 15px;
+        border-radius: 5px;
+        font-size: large;
+      }
+
+      .navbar button:hover {
+        background-color: lightgrey;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(23, 14, 120);
+        padding: 30px 100px;
+      }
+
+      .hero div {
+        width: 50%;
+        margin: 20px 10px;
+      }
+
+      .new {
+        background-color: rgb(255, 0, 0);
+        padding: 3px 15px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: small;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      .hero div h1 {
+        padding-top: 10px;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: rgb(210, 210, 239);
+        text-shadow: 2px 2px 2px black;
+        text-decoration: underline dashed white;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+      }
+
+      .hero div p {
+        font-size: 1.2rem;
+        color: rgba(246, 246, 247, 0.886);
+        text-shadow: 3px 6px 20px black;
+      }
+
+      .enroll {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: large;
+        cursor: pointer;
+        /* box-shadow: 5pxpx 3px rgb(255, 0, 0); */
+        box-shadow: 7px 7px 0px red;
+        transition: all 0.2s ease;
+      }
+
+      .enroll:hover {
+        background-color: lightgrey;
+        box-shadow: 5px 5px 0px rgb(255, 0, 0);
+        transition: all 0.2s ease-in-out;
+      }
+
+      .enroll:active {
+        transform: scale(0.9);
+      }
+
+      .image {
+        display: flex;
+        justify-content: end;
+      }
+
+      .image img {
+        width: 90%;
+        border-radius: 30px;
+        box-shadow: 0 0 20px white;
+      }
+
+      .heading {
+        font-size: xx-large;
+        text-align: center;
+        background: rgb(23, 14, 120);
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        color: white;
+        text-decoration: underline dashed white;
+        padding: 20px;
+      }
+
+      .three-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(23, 14, 120);
+        /* height:50vw; */
+        /* border: 1px solid white; */
+        padding: 10px 40px;
+        /* margin: 10px 50px; */
+      }
+
+      .cards {
+        border: 1px solid white;
+        height: 500px;
+        width: 400px;
+        margin: 20px;
+        /* box-shadow: 3px 0px 10px white; */
+        border-radius: 20px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        /* padding: 10px 30px;
+        gap: 50px; */
+      }
+
+      .cards img {
+        width: 50%;
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .cards h3{
+        text-align: center;
+      }
+
+      .cards p {
+        text-align: center;
+        margin: 20px 30px;
+      }
+
+     
+      @media screen and (max-width: 768px) {
+  .three-cards {
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+
+  .cards {
+    width: 100%;
+    max-width: 90%;
+    margin: 15px auto;
+  }
+}
+     
